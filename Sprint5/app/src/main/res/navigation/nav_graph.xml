@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.sprint5.ShoeListFragment"
+        android:label="Lista de productos"
+        tools:layout="@layout/fragment_shoe_list">
+
+        <action
+            android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"
+            app:destination="@id/shoeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeDetailFragment"
+        android:name="com.example.sprint5.ShoeDetailFragment"
+        android:label="Detalles del producto"
+        tools:layout="@layout/fragment_shoe_detail">
+
+        <argument
+            android:name="shoe"
+            app:argType="com.example.sprint5.Shoe" />
+
+        <action
+            android:id="@+id/action_shoeDetailFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.sprint5.CartFragment"
+        android:label="Carrito"
+        tools:layout="@layout/fragment_cart" />
+</navigation>

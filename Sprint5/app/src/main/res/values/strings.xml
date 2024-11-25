@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sprint5</string>
+    <string name="shoe_list_fragment_label">Shoe List</string>
+    <string name="shoe_detail_fragment_label">Detalle del Zapato</string>
+    <string name="cart_fragment_label">Carrito</string>
+    <string name="shoe_image_desc">Imagen del zapato</string>
+    <string name="action_settings">Settings</string>
+</resources>
